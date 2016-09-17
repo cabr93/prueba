@@ -13,6 +13,7 @@
 		071E7F381D876A280090E64E /* CoreImageDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 071E7F361D876A280090E64E /* CoreImageDemo.xcdatamodeld */; };
 		071E7F3A1D876A280090E64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071E7F391D876A280090E64E /* Assets.xcassets */; };
 		071E7F3D1D876A280090E64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071E7F3B1D876A280090E64E /* LaunchScreen.storyboard */; };
+		071E7F451D876A340090E64E /* aa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 071E7F441D876A340090E64E /* aa.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		071E7F391D876A280090E64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071E7F3C1D876A280090E64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		071E7F3E1D876A280090E64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071E7F441D876A340090E64E /* aa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aa.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		071E7F2E1D876A280090E64E /* CoreImageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				071E7F441D876A340090E64E /* aa.jpg */,
 				071E7F2F1D876A280090E64E /* AppDelegate.swift */,
 				071E7F311D876A280090E64E /* ViewController.swift */,
 				071E7F331D876A280090E64E /* Main.storyboard */,
@@ -100,6 +103,7 @@
 					071E7F2B1D876A280090E64E = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 87389MM3B7;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 				071E7F3D1D876A280090E64E /* LaunchScreen.storyboard in Resources */,
 				071E7F3A1D876A280090E64E /* Assets.xcassets in Resources */,
 				071E7F351D876A280090E64E /* Main.storyboard in Resources */,
+				071E7F451D876A340090E64E /* aa.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.cabr93.CoreImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -269,6 +275,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.cabr93.CoreImageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -291,6 +298,7 @@
 				071E7F431D876A280090E64E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

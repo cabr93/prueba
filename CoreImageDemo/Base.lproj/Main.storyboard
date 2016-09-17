@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreImageDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0P4-lG-Yhw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWQ-6a-YUC">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="original" id="nOp-0a-nfX">
+                                        <connections>
+                                            <action selector="original:" destination="BYZ-38-t0r" id="N5n-6d-P2m"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="gris" id="Kql-1h-lyZ">
+                                        <connections>
+                                            <action selector="gris:" destination="BYZ-38-t0r" id="38h-0A-tUU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" id="3ii-0G-0Yz"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0P4-lG-Yhw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ix-MP-uBO"/>
+                            <constraint firstItem="0P4-lG-Yhw" firstAttribute="trailing" secondItem="VWQ-6a-YUC" secondAttribute="trailing" id="ADr-J9-W91"/>
+                            <constraint firstItem="0P4-lG-Yhw" firstAttribute="leading" secondItem="VWQ-6a-YUC" secondAttribute="leading" id="Lea-2L-dNt"/>
+                            <constraint firstItem="0P4-lG-Yhw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ODU-XY-QBf"/>
+                            <constraint firstItem="0P4-lG-Yhw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d9d-pj-6to"/>
+                            <constraint firstItem="VWQ-6a-YUC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="iK3-hQ-cxe"/>
+                            <constraint firstItem="0P4-lG-Yhw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="s6M-sq-CG5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foto" destination="0P4-lG-Yhw" id="eBY-6m-9a0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="205" y="333"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aa.jpg" width="640" height="1136"/>
+    </resources>
 </document>
